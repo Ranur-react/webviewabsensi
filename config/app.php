@@ -52,8 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
-    'asset_url' => env('ASSET_URL', 'http://localhost/absensin/public'),
+    'url' => env('APP_URL', 'https://wahyuabsensi.gunungmas-seluler.com/'),
+    'asset_url' => env('ASSET_URL', 'https://wahyuabsensi.gunungmas-seluler.com/public'),
 
     /*
     |--------------------------------------------------------------------------
