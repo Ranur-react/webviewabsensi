@@ -31,7 +31,7 @@
                             <option value="{{$siswa->kelas_id}}">{{$siswa->kelas->kelas}}</option>
                             @endif
                             @foreach ($kelas as $kls)
-                            <option value="{{$kls->id}}">{{$kls->kls}}</option>
+                            <option value="{{$kls->id}}">{{$kls->kelas}}</option>
                             @endforeach
                         </select>
                     </div>
