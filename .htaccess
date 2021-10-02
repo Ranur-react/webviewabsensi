@@ -1,21 +1,112 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
+RewriteEngine On
 
-    RewriteEngine On
+RewriteCond %{HTTP_HOST} ^localhost/absensi2/
+RewriteRule (.*) http://localhost/absensi2/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://localhost/absensi2 [R=301,L]
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+IndexIgnore *.sql
 
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+RewriteRule ^profile/?$ editprofile.php
 
-    # Handle Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
-</IfModule>
+RewriteRule ^admin/guru/?$ admin/tableguru.php
+
+RewriteRule ^admin/guru/add/?$ admin/tambahguru.php
+
+RewriteRule ^admin/guru/edit/([0-9]+) admin/editguru.php?edit=$1
+
+RewriteRule ^admin/guru/hapus/([0-9]+) admin/tablehapusguru.php?hapus=$1
+
+RewriteRule ^admin/siswa/?$ admin/tablesiswa.php
+
+RewriteRule ^admin/siswa/add/?$ admin/tambahsiswa.php
+
+RewriteRule ^admin/siswa/edit/([0-9]+) admin/editsiswa.php?edit=$1
+
+RewriteRule ^admin/siswa/hapus/([0-9]+) admin/tablehapussiswa.php?hapus=$1
+
+RewriteRule ^admin/admin/?$ admin/tableadmin.php
+
+RewriteRule ^admin/admin/add/?$ admin/tambahadmin.php
+
+RewriteRule ^admin/admin/edit/([0-9]+) admin/editadmin.php?edit=$1
+
+RewriteRule ^admin/admin/hapus/([0-9]+) admin/tablehapusadmin.php?hapus=$1
+
+RewriteRule ^admin/kelas/?$ admin/tablekelas.php
+
+RewriteRule ^admin/kelas/add/?$ admin/tambahkelas.php
+
+RewriteRule ^admin/kelas/edit/([0-9]+) admin/editkelas.php?edit=$1
+
+RewriteRule ^admin/kelas/hapus/([0-9]+) admin/tablehapuskelas.php?hapus=$1
+
+RewriteRule ^admin/periode/?$ admin/tableperiode.php
+
+RewriteRule ^admin/periode/add/?$ admin/tambahperiode.php
+
+RewriteRule ^admin/periode/edit/([0-9]+) admin/editperiode.php?edit=$1
+
+RewriteRule ^admin/periode/hapus/([0-9]+) admin/tablehapusperiode.php?hapus=$1
+
+RewriteRule ^admin/pembagian_kelas/?$ admin/tablepembagian_kelas.php
+
+RewriteRule ^admin/pembagian_kelas_list/?$ admin/tablepembagian_kelas_list.php
+
+RewriteRule ^admin/pembagian_kelas/hapus/([0-9]+) admin/tablehapuspembagian_kelas.php?hapus=$1
+
+RewriteRule ^admin/pelajaran/?$ admin/tablepelajaran.php
+
+RewriteRule ^admin/pelajaran/add/?$ admin/tambahpelajaran.php
+
+RewriteRule ^admin/pelajaran/edit/([0-9]+) admin/editpelajaran.php?edit=$1
+
+RewriteRule ^admin/pelajaran/hapus/([0-9]+) admin/tablehapuspelajaran.php?hapus=$1
+
+RewriteRule ^admin/jamngajar/?$ admin/tablejamngajar.php
+
+RewriteRule ^admin/jamngajar/add/?$ admin/tambahjamngajar.php
+
+RewriteRule ^admin/jamngajar/edit/([0-9]+) admin/editjamngajar.php?edit=$1
+
+RewriteRule ^admin/jamngajar/hapus/([0-9]+) admin/tablehapusjamngajar.php?hapus=$1
+
+RewriteRule ^admin/wali/?$ admin/tablewali.php
+
+RewriteRule ^admin/wali/add/?$ admin/tambahwali.php
+
+RewriteRule ^admin/wali/edit/([0-9]+) admin/editwali.php?edit=$1
+
+RewriteRule ^admin/wali/hapus/([0-9]+) admin/tablehapuswali.php?hapus=$1
+
+RewriteRule ^admin/setting/?$ admin/setting.php
+
+RewriteRule ^admin/settinglaporan/?$ admin/settinglaporan.php
+
+RewriteRule ^guru/guru/?$ guru/tableguru.php
+
+RewriteRule ^guru/hadir/?$ guru/tablehadir.php
+
+RewriteRule ^guru/hadir/hapus/([0-9]+) guru/tabelhapushadir.php?hapus=$1
+
+RewriteRule ^guru/siswa/?$ guru/tablesiswa.php
+
+RewriteRule ^guru/absenjamngajar/?$ guru/tambahabsenjamngajar.php
+
+RewriteRule ^guru/ambil_absen/([0-9]+) guru/tambahabsensiswa.php?id_jam_mengajar=$1
+
+RewriteRule ^guru/jamngajar/?$ guru/tablejamngajar.php
+
+RewriteRule ^guru/jamngajar/([0-9]+)/([0-9]+)/([0-9]+)/ guru/tablejamngajarsingle.php?id_guru=$1&tahun=$2&bulan=$3
+
+RewriteRule ^kesiswaan/laporan/?$ kesiswaan/laporan.php
+
+RewriteRule ^koordinator/laporanabsen/?$ koordinator/laporan.php
+
+RewriteRule ^koordinator/laporanngajar/?$ koordinator/laporanngajar.php
+
+RewriteRule ^wali_kelas/laporan/?$ wali_kelas/laporan.php
+
+RewriteRule ^siswa/siswa/?$ siswa/index.php
+
+ErrorDocument 404 http://localhost/absensi2/404.php
