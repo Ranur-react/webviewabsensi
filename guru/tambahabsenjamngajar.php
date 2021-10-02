@@ -27,8 +27,8 @@
 
  <div id="content">
    <div id="content-header">
-     <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-       <a href="https://absen-mtsannur.com/guru" class="tip-bottom">Guru</a> <a href="#" class="current">Absen</a></div>
+     <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+       <a href="https://wahyuabsensi.gunungmas-seluler.com/guru" class="tip-bottom">Guru</a> <a href="#" class="current">Absen</a></div>
      <h1>Siswa</h1>
    </div>
 
@@ -55,7 +55,7 @@
                 <?php
                 $query_tampil=mysqli_query($konek,"select e.jam_mulai,e.jam_selesai,e.tgl_ngajar,a.*,b.nama_kelas,c.mata_pelajaran,d.nama as nama_guru from jam_mengajar a join kelas b on a.id_kelas=b.id_kelas join pelajaran c on a.id_pelajaran=c.id_pelajaran join guru d on a.id_guru=d.id_guru join absen_jam_ngajar e on a.id_jam_mengajar=e.id_jam_mengajar join periode t1 on t1.id_periode=a.id_periode where t1.id_status='1' and d.nip='$_SESSION[username]'");
                 $no=1; while ($data=mysqli_fetch_array($query_tampil)) {
-                  $aksi='<a href="https://absen-mtsannur.com/guru/ambil_absen/'.$data['id_jam_mengajar'].'"class="btn btn-success">Ambil Absen</a>';
+                  $aksi='<a href="https://wahyuabsensi.gunungmas-seluler.com/guru/ambil_absen/'.$data['id_jam_mengajar'].'"class="btn btn-success">Ambil Absen</a>';
                  ?>
                 <tr class="gradeX">
                   <td><?php echo $no; ?></td>

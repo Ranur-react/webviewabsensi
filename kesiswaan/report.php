@@ -29,7 +29,7 @@ $nama_bulan=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus',
       <div style="width: 100%;">
         <table cellspacing="0"style="width: 100%;">
           <tr>
-            <td style="width: 15%;"><img src="https://absen-mtsannur.com/img/<?PHP echo $header_photo['photo']; ?>"style="width: 50%;"></td>
+            <td style="width: 15%;"><img src="https://wahyuabsensi.gunungmas-seluler.com/img/<?PHP echo $header_photo['photo']; ?>"style="width: 50%;"></td>
               <td style="width: 70%;"align="center">
                 <b>Pemerintah Kota <?PHP echo $header_photo['kota']; ?></b>
                 <h2 style="margin-top:-5px;"><?PHP echo $header_photo['nama_sekolah']; ?></h2>
@@ -37,7 +37,7 @@ $nama_bulan=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus',
                   <p style="font-size: 3mm; margin-top:-10px;"><?PHP echo $header_photo['email']; ?></p>
                   <p style="font-size: 3mm; margin-top:-12px;"> <?PHP echo $header_ta['tahun_ajar']." Semester ".$header_ta['semester']?><br></p>
               </td>
-            <td style="width: 15%;"><img src="https://absen-mtsannur.com/img/tut.png"style="width: 70%;"></td>
+            <td style="width: 15%;"><img src="https://wahyuabsensi.gunungmas-seluler.com/img/tut.png"style="width: 70%;"></td>
             <tr></tr>
           </tr>
         </table>

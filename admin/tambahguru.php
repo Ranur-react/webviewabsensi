@@ -5,9 +5,9 @@
 
  <div id="content">
  <div id="content-header">
-   <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-     <a href="https://absen-mtsannur.com/admin/guru" class="tip-bottom">Guru</a>
-     <a href="https://absen-mtsannur.com/admin/guru/add" class="current">Tambah</a> </div>
+   <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+     <a href="https://wahyuabsensi.gunungmas-seluler.com/admin/guru" class="tip-bottom">Guru</a>
+     <a href="https://wahyuabsensi.gunungmas-seluler.com/admin/guru/add" class="current">Tambah</a> </div>
    <h1>Tambah Guru</h1>
  </div>
  <div class="container-fluid">

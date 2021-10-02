@@ -27,8 +27,8 @@
 
  <div id="content">
    <div id="content-header">
-     <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-       <a href="https://absen-mtsannur.com/guru" class="tip-bottom">Guru</a> <a href="#" class="current">Absen</a></div>
+     <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+       <a href="https://wahyuabsensi.gunungmas-seluler.com/guru" class="tip-bottom">Guru</a> <a href="#" class="current">Absen</a></div>
      <h1>Siswa</h1>
    </div>
 
@@ -59,10 +59,10 @@
                 $no=1; while ($data=mysqli_fetch_array($query_tampil)) {
 
                   if($data['id_status']=="1"){
-                    $aksi='<a href="https://absen-mtsannur.com/guru/proses.php?kategori=absen_ngajar_approve&id_absen_siswa='.$data['id_absen_siswa'].'"class="btn btn-danger">Belum Di Approve</a>';
+                    $aksi='<a href="https://wahyuabsensi.gunungmas-seluler.com/guru/proses.php?kategori=absen_ngajar_approve&id_absen_siswa='.$data['id_absen_siswa'].'"class="btn btn-danger">Belum Di Approve</a>';
                   }else{
                     $aksi='<btn class="btn btn-success btn-xs">Telah Di Approve</btn>
-                    <br><br><a href="https://absen-mtsannur.com/guru/proses.php?kategori=batal_absen_ngajar_approve&id_absen_siswa='.$data['id_absen_siswa'].'"class="btn btn-danger">Batal Approve</a>';
+                    <br><br><a href="https://wahyuabsensi.gunungmas-seluler.com/guru/proses.php?kategori=batal_absen_ngajar_approve&id_absen_siswa='.$data['id_absen_siswa'].'"class="btn btn-danger">Batal Approve</a>';
                   }
 
                   if($data['keterangan']=="h"){

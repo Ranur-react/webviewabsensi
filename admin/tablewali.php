@@ -5,8 +5,8 @@
 <!--main-container-part-->
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-      <a href="https://absen-mtsannur.com/admin/wali" class="current">Wali Kelas</a> </div>
+    <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+      <a href="https://wahyuabsensi.gunungmas-seluler.com/admin/wali" class="current">Wali Kelas</a> </div>
     <h1>Table Wali Kelas</h1>
   </div>
   <div class="container-fluid">
@@ -46,8 +46,8 @@
                   echo $data_kelas['nama_kelas']; ?></td>
                   <td><?php echo $data['username']; ?></td>
                   <td><?php echo $data['password']; ?></td>
-                  <td><a href="https://absen-mtsannur.com/admin/wali/edit/<?PHP echo $data['id_wali']?>"class="btn btn-info">Edit</a></td>
-                  <td><a href="https://absen-mtsannur.com/admin/wali/hapus/<?PHP echo $data['id_wali']?>"class="btn btn-danger">Hapus</a></td>
+                  <td><a href="https://wahyuabsensi.gunungmas-seluler.com/admin/wali/edit/<?PHP echo $data['id_wali']?>"class="btn btn-info">Edit</a></td>
+                  <td><a href="https://wahyuabsensi.gunungmas-seluler.com/admin/wali/hapus/<?PHP echo $data['id_wali']?>"class="btn btn-danger">Hapus</a></td>
                 </tr>
                 <?php $no++; } ?>
               </tbody>

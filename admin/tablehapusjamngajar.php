@@ -5,8 +5,8 @@
 <!--main-container-part-->
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-      <a href="https://absen-mtsannur.com/admin/jamngajar" class="top-bottom">Jam Ngajar</a><a href="#" class="current">Hapus</a> </div>
+    <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+      <a href="https://wahyuabsensi.gunungmas-seluler.com/admin/jamngajar" class="top-bottom">Jam Ngajar</a><a href="#" class="current">Hapus</a> </div>
     <h1>Table Jam Ngajar</h1>
   </div>
   <div class="container-fluid">
@@ -52,8 +52,8 @@
                   $data_pelajaran=mysqli_fetch_array($query_pelajaran);
                   echo $data_pelajaran['mata_pelajaran']; ?></td>
                   <td><?php echo $data['jam']; ?></td>
-                  <td><a href="https://absen-mtsannur.com/admin/proses.php?hapus_jamngajar=<?PHP echo $data['id_jam_mengajar']?>"class="btn btn-info">Ya</a></td>
-                  <td><a href="https://absen-mtsannur.com/admin/wali"class="btn btn-danger">Tidak</a></td>
+                  <td><a href="https://wahyuabsensi.gunungmas-seluler.com/admin/proses.php?hapus_jamngajar=<?PHP echo $data['id_jam_mengajar']?>"class="btn btn-info">Ya</a></td>
+                  <td><a href="https://wahyuabsensi.gunungmas-seluler.com/admin/wali"class="btn btn-danger">Tidak</a></td>
                 </tr>
                 <?php $no++; } ?>
               </tbody>

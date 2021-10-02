@@ -5,7 +5,7 @@
 
  <div id="content">
  <div id="content-header">
-   <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+   <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
      <a href="#" class="tip-bottom">Pelajaran</a> <a href="#" class="current">Tambah</a> </div>
    <h1>Tambah pelajaran</h1>
  </div>

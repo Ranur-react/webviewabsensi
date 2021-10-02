@@ -5,8 +5,8 @@
 <!--main-container-part-->
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-      <a href="https://absen-mtsannur.com/admin/admin" class="current">Admin</a> </div>
+    <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+      <a href="https://wahyuabsensi.gunungmas-seluler.com/admin/admin" class="current">Admin</a> </div>
     <h1>Table Admin</h1>
   </div>
   <div class="container-fluid">
@@ -45,8 +45,8 @@
                   <td><?php echo $data['password']; ?></td>
                   <td><?php echo $data['email']; ?></td>
                   <td><?php echo $data['akses']; ?></td>
-                  <td><a href="https://absen-mtsannur.com/admin/admin/edit/<?PHP echo $data['id_user']?>"class="btn btn-info">Edit</a></td>
-                  <td><a href="https://absen-mtsannur.com/admin/admin/hapus/<?PHP echo $data['id_user']?>"class="btn btn-danger">Hapus</a></td>
+                  <td><a href="https://wahyuabsensi.gunungmas-seluler.com/admin/admin/edit/<?PHP echo $data['id_user']?>"class="btn btn-info">Edit</a></td>
+                  <td><a href="https://wahyuabsensi.gunungmas-seluler.com/admin/admin/hapus/<?PHP echo $data['id_user']?>"class="btn btn-danger">Hapus</a></td>
                 </tr>
                 <?php $no++; } ?>
               </tbody>

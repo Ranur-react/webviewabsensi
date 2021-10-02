@@ -17,8 +17,8 @@
 
  <div id="content">
    <div id="content-header">
-     <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-       <a href="https://absen-mtsannur.com/petugas_piket/Hadir" class="tip-bottom">Kehadiran Guru</a> </div>
+     <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+       <a href="https://wahyuabsensi.gunungmas-seluler.com/petugas_piket/Hadir" class="tip-bottom">Kehadiran Guru</a> </div>
      <h1>Kehadiran Guru</h1>
    </div>
 
@@ -63,7 +63,7 @@
                    <td><?php echo $data['jam']; ?></td>
                  
                  
-                  <td><a href="https://absen-mtsannur.com/petugas_piket/hadir/hapus/<?PHP echo $data['id']?>"class="btn btn-danger">Hapus</a></td>
+                  <td><a href="https://wahyuabsensi.gunungmas-seluler.com/petugas_piket/hadir/hapus/<?PHP echo $data['id']?>"class="btn btn-danger">Hapus</a></td>
                 </tr>
                 <?php $no++; } ?>
               </tbody>

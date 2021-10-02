@@ -7,7 +7,7 @@
 <div id="content">
 <!--breadcrumbs-->
   <div id="content-header">
-    <div id="breadcrumb"> <a href="https://absen-mtsannur.com//<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+    <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com//<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
   </div>
 <!--End-breadcrumbs-->
 

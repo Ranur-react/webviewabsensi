@@ -24,8 +24,8 @@ $nama_bulan=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus',
  ?>
  <div id="content">
    <div id="content-header">
-     <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-       <a href="https://absen-mtsannur.com/guru/jamngajar" class="current">Jam Ngajar Guru</a> </div>
+     <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+       <a href="https://wahyuabsensi.gunungmas-seluler.com/guru/jamngajar" class="current">Jam Ngajar Guru</a> </div>
      <h1>Jam Mengajar</h1>
    </div>
    <div class="container">
@@ -65,11 +65,11 @@ $nama_bulan=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus',
                   <td><?php echo $no;$no++; ?></td>
                   <td> <?php
                   if (isset($_GET['bulan'])) {
-                    echo "<a href='https://absen-mtsannur.com/guru/jamngajar/$data[id_guru]/$_GET[tahun]/$cari_bulan_guru/'>$data[nama]</a>";
+                    echo "<a href='https://wahyuabsensi.gunungmas-seluler.com/guru/jamngajar/$data[id_guru]/$_GET[tahun]/$cari_bulan_guru/'>$data[nama]</a>";
                   }else {
                     $cari_bulan_guru=date('m');
                     $tahun=date('Y');
-                    echo "<a href='https://absen-mtsannur.com/guru/jamngajar/$data[id_guru]/$tahun/$cari_bulan_guru/'>$data[nama]</a>";
+                    echo "<a href='https://wahyuabsensi.gunungmas-seluler.com/guru/jamngajar/$data[id_guru]/$tahun/$cari_bulan_guru/'>$data[nama]</a>";
                   }
                   ?></td>
                   <?php

@@ -5,9 +5,9 @@
 
  <div id="content">
  <div id="content-header">
-   <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-     <a href="https://absen-mtsannur.com/admin/jamngajar" class="tip-bottom">Jam Ngajar</a>
-    <a href="https://absen-mtsannur.com/admin/jamngajar/add" class="current">Edit</a> </div>
+   <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+     <a href="https://wahyuabsensi.gunungmas-seluler.com/admin/jamngajar" class="tip-bottom">Jam Ngajar</a>
+    <a href="https://wahyuabsensi.gunungmas-seluler.com/admin/jamngajar/add" class="current">Edit</a> </div>
    <h1>Edit Jam Ngajar</h1>
  </div>
  <div class="container-fluid">

@@ -9,8 +9,8 @@ $query_tampil=mysqli_query($konek,"SELECT * FROM guru JOIN jam_mengajar ON guru.
  ?>
  <div id="content">
    <div id="content-header">
-     <div id="breadcrumb"> <a href="https://absen-mtsannur.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-       <a href="https://absen-mtsannur.com/petugas_piket/jamngajar" class="current">Jam Ngajar</a></div>
+     <div id="breadcrumb"> <a href="https://wahyuabsensi.gunungmas-seluler.com/<?php echo $_SESSION['akses']; ?>/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+       <a href="https://wahyuabsensi.gunungmas-seluler.com/petugas_piket/jamngajar" class="current">Jam Ngajar</a></div>
      <h1>Jam Mengajar</h1>
    </div>
    <div class="container">
@@ -44,7 +44,7 @@ $query_tampil=mysqli_query($konek,"SELECT * FROM guru JOIN jam_mengajar ON guru.
             </div>
           <div class="widget-content">
             <div class="table-responsive">
-              <form method="post"action="https://absen-mtsannur.com/petugas_piket/proses.php?kategori=absen_jam_ngajar&id=<?PHP echo $_GET['id_guru']; ?>">
+              <form method="post"action="https://wahyuabsensi.gunungmas-seluler.com/petugas_piket/proses.php?kategori=absen_jam_ngajar&id=<?PHP echo $_GET['id_guru']; ?>">
               <table border="1"class="with-check">
                 <thead>
                   <tr>
